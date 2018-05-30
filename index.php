@@ -43,7 +43,7 @@
         <div class="swiper-slide slide-2" data-hash="intro">
             <div class="content">
                 <div class="kidney-bg">
-                    <img src="img/kidney.svg">
+                    <img src="img/kidney.svg" alt="image">
                 </div>
                 <p class="nav-nbm">02 / <span>06</span></p>
                 <h1 class="heading"><?php echo constant('Slider_2_Title'); ?></h1>
@@ -77,7 +77,7 @@
                     <div class="swiper-slide">
                         <div class="content three">
                             <div class="kidney-bg">
-                                <img src="img/kidney.svg">
+                                <img src="img/kidney.svg" alt="image">
                             </div>
                             <p class="nav-nbm">03 / <span>06</span></p>
                             <!--<h2 class="h-medium">Што всушност прават бубрезите?</h2>-->
@@ -106,7 +106,7 @@
         <div class="swiper-slide slide-4" data-hash="learn-more">
             <div class="swiper-container swiper-container-v" data-slide="4">
                 <div class="kidney-two">
-                    <img src="img/kidney.svg">
+                    <img src="img/kidney.svg" alt="image">
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -147,7 +147,7 @@
         <div class="swiper-slide slide-6" data-hash="hemodialysis">
             <div class="swiper-container swiper-container-v" data-slide="5">
                 <div class="kidney-two">
-                    <img src="img/kidney.svg">
+                    <img src="img/kidney.svg" alt="image">
                 </div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -195,20 +195,10 @@
                                 <img src="img/kidney.svg">
                             </div>
                             <p class="nav-nbm">06 / <span>06</span></p>
-                            <h1 class="heading blue-underline"><span class="underline">Современите медицински</span>
+                            <h1 class="heading blue-underline"><span
+                                        class="underline"><?php echo constant('Slider_6_Title'); ?></span>
                             </h1>
-                            <h1 class="heading">третмани влијаат мошне</h1>
-                            <h1 class="heading">позитивно на пациентите</h1>
-                            <h1 class="heading">со бубрежни заболувања.</h1>
-                            <p class="content-p">Доколку во минатото хроничната бубрежна болест претставувала „смртна
-                                казна“, денес современата хемодијализна терапија го спасува човечкиот живот и им
-                                овозможува на луѓето да поминат многу среќни моменти и да доживеат длабока старост.
-                                Пациентите имаат пристоен и квалитетен начин на живот и ги исполнуваат секојдневните
-                                обврски.</p>
-                            <p class="content-p">Систина Нефроплус инвестираше во создавање на дијализни центри следејќи
-                                ги нај развиените светски примери. Со тоа, позитивно влијаевме врз перцепцијата за
-                                хемодијализата во нашата земја и регионот и им овозможивме на своите пациенти
-                                достоинствен третман по највисоки стандарди.</p>
+                            <?php echo constant('Slider_6_Description'); ?>
 
                         </div>
                     </div>
@@ -245,10 +235,18 @@
             </button>
             <span class="close-btn">Затвори</span>
         </div>
-        <div class="social">
-            <!-- <a href=""><span>Fb</span></a>
-               <a href="#"><span>Tw</span></a>-->
-            <a href="#"><span>In</span></a>
+        <div class="kocki">
+            <ul>
+                <form action="" method="post" class="hide-large">
+                    <input type="hidden" value="mk" name="lang"/><input type="image" src="img/mkflag.png"
+                                                                        alt="English"/>
+                </form>
+
+                <form action="" method="post" class="hide-large">
+                    <input type="hidden" value="en" name="lang"/><input type="image" src="img/enflag.png"
+                                                                        alt="Македонски"/>
+                </form>
+            </ul>
         </div>
         <video class="about-video" id="video-about" muted playsinline>
             <source class="video-one" src="videos/about.mp4" type="video/mp4">
@@ -256,48 +254,7 @@
         <div class="about-contenct">
             <div class="about-content-inner">
                 <div class="about-text_inner">
-                    <h1>Систина</h1>
-                    <h1>Нефроплус</h1>
-                    <p>
-                        Основана во 2014 година, како резултат на потребата за подобрување на условите во центрите за
-                        дијализа и дијализниот третман во Р Македонија, Систина Нефроплус обезбедува здравствена грижа
-                        за повеќе од 600 пациенти во 10 центри, со повеќе од 80.000 дијализни третмани годишно.
-                        <br><br>
-                        ПЗУ Систина Нефроплус, најсофистицираниот центар за хемодијализа во земјата и регионот,
-                        применува најсовремени стандарди и процедури кои се засновани на препораките на највисоките
-                        европски и светски водичи за добра клиничка пракса во хемодијализата. Со помош на својот успешен
-                        модел на раководење, посветеност и стручност на специјализираниот тим професионалци, Систина
-                        Нефроплус на своите пациенти освен подобрување на здравствената состојба, им овозможува и
-                        продолжување и подобрување на квалитетот на животот на секој пациент.
-                        Систина Нефроплус центрите за дијализа се опремени со најсофистицирана опрема. Во нив за првпат
-                        се воведени врвните најефикасни европски и светски модалитети на хемодијализа High FLUX
-                        хемодијализа и On Line-HDF хемодијафилтрација.
-                        Компанијата, исто така, инвестира и во последна генерација на најсовремена и најефикасна
-                        технологија за хемодијализа, апарати CORDIAX 5008 S на производителот Фрезениус Медикал Кеaр, 80
-                        столови и 79 кревети исклучиво за намена – Хемодијализа, како и обнова и набавка на нови системи
-                        за обработка на водата (реверзни осмози). Хемодијалнизните третмани се изведуваат исклучиво со
-                        ултра чиста вода.
-                        Преку своите дијализни центри, ПЗУ Систина Нефроплус е присутна во 10 градови, и тоа во Тетово,
-                        Гостивар, Дебар, Струга, Битола, Прилеп, Кавадарци и Велес, а за првпат во нашата држава
-                        инвестираше во отворање на уште два нови центри, во Кичево и во Охрид.
-                        Центрите на Систина Нефроплус нудат „холидеј-хемодијализа“, додека за првпат во Р Македонија, во
-                        дијализниот центар Систина Нефроплус - Охрид се изведуваат и долги ноќни хемодијализни третмани.
-                        <br><br>
-                        Квалитет индикатори и контрола на квалитет
-                        <br><br>
-                        Дијализниот третман кој се нуди во Систина Нефроплус не претставува само опслужување и
-                        подобрување на здравствената состојба туку и продолжување на животот на пациентот воедно и
-                        подобрување на квалитетот на животот на секој пациент.
-                        Како новина која за првпат се воведува во Р Македонија од областа на хемодијализа Систина
-                        Нефроплус за осигурените лица со хронична бубрежна инсуфиенција, воспостави политика на квалитет
-                        со цел подобрување и унапредување на квалитетот на услугите со создавање подобри услови за
-                        вршење дијализа.
-                        Контролата на адекватноста и успешноста на хемодијализниот третман се извршува преку квалитет
-                        индикатори согласно европските протоколи за добра медицинска грижа за хемодијализа, EBPG
-                        (European Best Practice Guidelines). За таа цел компанијата изготви повеќе од 300 процедури,
-                        протоколи и упатства за стандардизација на процесите за правилно водење како на дијализен
-                        третман така и воопшто на дијализните центри.
-                    </p>
+                    <?php echo constant('ABOUTUS'); ?>
                 </div>
                 <?php
                 $img_p = "img/slajder/";
@@ -312,27 +269,7 @@
                     <?php } ?>
                 </div>
             </div>
-            <!--<div class="images-right image-1">
-               <img src="img/about-2.jpg">
-               </div>
 
-
-               <div class="images-right image-2">
-
-               <img src="img/about-1.jpg">
-               </div>
-
-               <div class="images-right image-4">
-               <img src="img/about-3.jpg">
-               </div>
-
-               <div class="images-right image-5">
-               <img src="img/ohrid-3.jpg">
-               </div>
-
-               <div class="images-right image-6">
-               <img src="img/ohrid-1.jpg">
-               </div>-->
         </div>
 
 

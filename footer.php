@@ -1,10 +1,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/anime.min.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/swiper.min.js"></script>
-<script src="/js/scrollreveal.min.js"></script>
-<script src="/js/slick.min.js"></script>
-<script src="/js/slick-lightbox.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slick-lightbox.min.js"></script>
 <script>
     var titles = ['01', '02', '03', '04',];
     $('.swiper-container .swiper-slide').each(function (i) {
