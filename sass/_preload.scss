@@ -1,0 +1,109 @@
+.preload {
+	position: fixed;
+	z-index: 9999999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+
+
+
+	p {
+	color: #fff;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: .7rem;
+    z-index: 1;		
+	}
+}
+
+
+.overlay-noise {
+	background: url(../img/noise2.gif);
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.07;;
+
+}
+
+
+.loading-txt {
+		color: transparent;
+	animation: blur 5s ease-out infinite;
+	-webkit-animation: blur 5s ease-out infinite;
+
+
+
+}
+
+.loading-txt:nth-child(1) {
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+.loading-txt:nth-child(2) {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+.loading-txt:nth-child(3) {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.loading-txt:nth-child(4) {
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+}
+.loading-txt:nth-child(5) {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+.loading-txt:nth-child(6) {
+	animation-delay: 1.1s;
+	-webkit-animation-delay: 1.1s;
+}
+.loading-txt:nth-child(7) {
+	animation-delay: 1.3s;
+	-webkit-animation-delay: 1.3s;
+}
+
+
+
+
+@keyframes blur {
+	0%		{text-shadow:  0 0 100px #000; opacity:0;}
+	5%		{text-shadow:  0 0 90px #000;}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px #000;}
+	80%		{text-shadow:  0 0 0px #000;}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px #000;}
+	100%	{text-shadow:  0 0 100px #000; opacity:0;}
+}
+
+@-webkit-keyframes blur {
+	0%		{text-shadow:  0 0 100px #000; opacity:0;}
+	5%		{text-shadow:  0 0 90px #000;}
+	15%		{opacity: 1;}
+	20%		{text-shadow:  0 0 0px #000;}
+	80%		{text-shadow:  0 0 0px #000;}
+	85%		{opacity: 1;}
+	95%		{text-shadow:  0 0 90px #000;}
+	100%	{text-shadow:  0 0 100px #000; opacity:0;}
+}
+
+
+@keyframes fadeout {
+	
+	from {opacity: 1}
+	to { opacity: 0}
+}
