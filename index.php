@@ -54,7 +54,7 @@
                     <span></span><span></span><span></span>
                 </div>
 
-                <a href="#intro-three" class="btn-def blue-btn bluee-btn"><?php echo constant('Slider_2_Link'); ?></a>
+                <a href="#intro-three" class="btn-def blue-btn bluee-btn"><?php echo constant('Slider_2_Link1'); ?></a>
             </div>
             <div class="video-section">
                 <div class="white-overlay"></div>
@@ -124,7 +124,40 @@
 
                             </a>
                             <div class="buttons">
-                                <a class="btn-def blue-btn next-btn bluee-btn"><?php echo constant('Slider_4_Link'); ?></a>
+                                <a class="btn-def blue-btn next-btn bluee-btn"><?php echo constant('Slider_4_Link4'); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content three ">
+                            <p class="nav-nbm">04 / <span>06</span></p>
+                            <a href="#" class="scroll-down-text-button first-text-button up"
+                               style="transform: rotate(180deg);"></a>
+                            <div class="big-text-scrollable second-text">
+                                <div class="text-scroll second-text-scroll">
+
+                                    <?php echo constant('Slider_4_Description4'); ?>
+                                </div>
+
+                            </div>
+                            <a href="#" class="scroll-down-text-button second-text-button down">
+
+                            </a>
+                            <div class="buttons">
+                                <a class="btn-def blue-btn next-btn bluee-btn"><?php echo constant('Slider_4_Link1'); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content three ">
+                            <p class="nav-nbm">04 / <span>06</span></p>
+                            <h1 class="heading mrg-btm"> <?php echo constant('Slider_4_Title3'); ?></h1>
+                            <?php echo constant('Slider_4_Description3'); ?>
+                            <div class="buttons">
+                                <a class="btn-def blue-btn bluee-btn prev-btn"
+                                   onclick="mySwiper.slideTo(3);"><?php echo constant('Slider_4_Link3-1'); ?></a>
+                                <a class="btn-def blue-btn bluee-btn btn-end-point"
+                                   onclick="mySwiper.slideTo(4);"><?php echo constant('Slider_4_Link3'); ?></a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +176,6 @@
                 </div>
             </div>
         </div>
-
         <div class="swiper-slide slide-6" data-hash="hemodialysis">
             <div class="swiper-container swiper-container-v" data-slide="5">
                 <div class="kidney-two">
@@ -153,7 +185,7 @@
                     <div class="swiper-slide">
                         <div class="content six">
                             <p class="nav-nbm">05 /<span>06</span></p>
-                            <h1><?php echo constant('Slider_5_Title'); ?></h1>
+                            <h1 class="heading"><?php echo constant('Slider_5_Title'); ?></h1>
                             <p class="content-p sml"><?php echo constant('Slider_5_Description'); ?>
                             </p>
                             <div class="buttons">
@@ -162,13 +194,14 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="swiper-slide">
                         <div class="content four">
-                            <p class="nav-nbm">06 / <span>06</span></p>
-                            <h6 class="hemo-heading"><?php echo constant('Slider_6_Title'); ?></h6>
+                            <h1 class="heading"><?php echo constant('Slider_5_Title1'); ?></h1>
+                            <p class="content-p sml"><?php echo constant('Slider_5_Description2'); ?></p>
                             <div class="buttons">
                                 <a class="btn-def blue-btn bluee-btn mrg-top"
-                                   onclick="mySwiper.slideTo(6);"><?php echo constant('Slider_6_Link'); ?></a>
+                                   onclick="mySwiper.slideTo(6);"><?php echo constant('Slider_5_Link1'); ?></a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +232,6 @@
                                         class="underline"><?php echo constant('Slider_6_Title'); ?></span>
                             </h1>
                             <?php echo constant('Slider_6_Description'); ?>
-
                         </div>
                     </div>
 
@@ -228,12 +260,12 @@
     <div class="right-section-content">
         <div class="about">
             <div id="three-sixty" class="three-sixty">
-                <a href="three-sixty.html" class="three-sixty-icon">Виртуелна прошетка</a>
+                <a href="three-sixty.html" class="three-sixty-icon"><?php echo constant('VirtualTour'); ?></a>
             </div>
             <button type="text" class="toggle-btn">
-                <span>За нас</span>
+                <span><?php echo constant('ABOUTUS_Title'); ?></span>
             </button>
-            <span class="close-btn">Затвори</span>
+            <span class="close-btn"><?php echo constant('Close'); ?></span>
         </div>
         <div class="kocki">
             <ul>
