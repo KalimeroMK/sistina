@@ -80,7 +80,7 @@ define("Slider_6_Title", " <h1 class=\"heading blue-underline\"><span class=\"un
                         <h1 class=\"heading\">treatments have had a great positive impact</h1>
                         <h1 class=\"heading\">on patients with kidney failure</h1>");
 define("Slider_6_Description", "<p class=\"content-p\">In the past, kideny diseases were considered a death sentence but contemporary advancements in the realm of kidney medicine have resulted in patients living full and productive lives.</p>
-                         <p class=\"content-p\">Систина Нефроплус инвестираше во создавање на дијализни центри следејќи ги најразвиените светски примери. Со тоа, позитивно влијаевме врз перцепцијата за хемодијализата во нашата земја и регионот и им овозможивме на своите пациенти достоинствен третман по највисоки стандарди.</p> ");
+ ");
 
 define("Slider_6_Link", "");
 define("ABOUTUS_Title", "About US");

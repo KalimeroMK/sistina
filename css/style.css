@@ -631,6 +631,10 @@ p {
   .content h1:nth-child(3) {
     animation-delay: 1s; }
 
+.content h1:not(.txt-trn) {
+    font-size: 5rem; 
+}
+
 .large-p {
   font-size: 2.3rem !important;
   line-height: 1.4;
@@ -2044,7 +2048,10 @@ a.mrg-t {
   color: #06377b;
   width: 55%;
   line-height:.9;
-  font-size: 7rem;
+  font-size: 5rem;
+}
+.marginh h1 {
+    margin: 0 !important;
 }
 
 a.btn-def.blue-btn.bluee-btn.mrg-top {
@@ -2122,7 +2129,7 @@ h2,h1 {
     width: auto;
     margin: auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     text-decoration: none;
     color: black;
     font-weight: 400;

@@ -236,3 +236,4 @@
 </script>
 </body>
 </html>
+<?php require_once 'bottom-cache.php'; ?>
