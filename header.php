@@ -1,8 +1,9 @@
-<?php require_once 'top-cache.php';?>
+<?php //require_once 'top-cache.php';?>
 <!DOCTYPE html PUBLIC
         "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
         "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
-<?php session_start();
+<?php
+session_start();
 $language = $_POST['lang'];
 if ($language === "mk") {
     $_SESSION['lang'] = "mk";
@@ -19,7 +20,7 @@ if (isset($_SESSION['lang']) && $_SESSION['lang'] === "en") {
     require_once 'language/mk.php';
 }
 
-$lang = $_SESSION['lang'] === "mk";
+
 ?>
 <html lang="en">
 <head>

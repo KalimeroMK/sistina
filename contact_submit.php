@@ -15,15 +15,17 @@ require 'contact.class.php';
 $email = new ContactSubmit();
 
 //Collect Pramaters
-$email->from = $_POST['email'];
-$email->sendTo = "info@mnvswissquality.ch";//Put the email address you want to recive emails on here.
-$email->name = $_POST['name'];
-$email->subject = $_POST['subject'];
+$email->from    = $_POST['email'];
+$email->sendTo  = "milosavleskidejan@gmail.com";//Put the email address you want to recive emails on here.
+$email->name    = $_POST['name'];
+$email->lastname    = $_POST['lastname'];
+$email->subject = $_POST['name'];
 $email->message = "
-From: " . $_POST['email'] . "
-Name: " . $_POST['name'] . "
-Subject: " . $_POST['subject'] . "
-Message: " . $_POST['message'] . "
+From: ".$_POST['email']."
+Name: ".$_POST['name']."
+Lastname: ".$_POST['lastname']."
+City: ".$_POST['subject']."
+Message: ".$_POST['message']."
 
 ";
 
@@ -31,6 +33,7 @@ Message: " . $_POST['message'] . "
 $email->sendMail();
 
 //Redirect
-$email->redirect("index.php?mess=1");
 
+$email->redirect("success.php");
 ?>
+

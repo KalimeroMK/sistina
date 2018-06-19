@@ -59,7 +59,7 @@
         clickable: true,
         navigation: {
             nextEl: '.next-btn',
-            //prevEl: '.prev-btn',
+            prevEl: '.prev-btn',
 
         },
     });
@@ -83,7 +83,7 @@
 
         mySwiper.on('slideChange', function () {
 
-            $(".swiper-container-v[data-slide='" + mySwiper.activeIndex + "'").addClass("active_");
+            $(".swiper-container-v[data-slide='" + mySwiper.activeIndex + "']").addClass("active");
 
 
             var swiperV = new Swiper('.active_', {
@@ -138,9 +138,9 @@
 
     setTimeout(function () {
         $(".preload").fadeOut("slow");
-        //$("#music").trigger("click");
+        $("#music").trigger("click");
         $(".slide-1 h1").addClass("f_a");
-        $(".slide-1").addClass("blur-out");
+        // $(".slide-1").addClass("blur-out");
     }, 5500)
 
 
@@ -166,25 +166,19 @@
         arrows: true,
         infinite: false,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
             },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
+
             {
                 breakpoint: 480,
                 settings: {
@@ -208,16 +202,49 @@
 
 
     (function ($) {
+        $(document).ready(function () {
+            $('.collapsible-menu').fadeOut();
+            collapsible_menu = 0;
+        });
+
+        $('.collapsible-menu-icon').click(function () {
+            if (collapsible_menu == 0) {
+                $('.collapsible-menu').fadeIn().addClass('appear');
+                collapsible_menu = 1;
+            }
+            else if (collapsible_menu == 1) {
+                $('.collapsible-menu').fadeOut().removeClass('appear');
+                collapsible_menu = 0;
+            }
+
+        });
+
+        $('.about-us-mobile').click(function () {
+            $('.contact-content-inner').fadeOut();
+            $('.about-content-inner').fadeIn();
+            $('.right-section').addClass('open');
+            $('.collapsible-menu').fadeOut().removeClass('appear');
+            collapsible_menu = 0;
 
 
-        /* $('.down').click(function(event){
-           event.preventDefault();
-           $(".text-scroll").scrollTop($(".text-scroll").scrollTop()+20);
-         });
-         $('.up').click(function(event){
-          $(".text-scroll").scrollTop($(".text-scroll").scrollTop()-20);
-         });*/
+        });
+        $('.contact-us-mobile').click(function () {
+            $('.about-content-inner').fadeOut();
+            $('.contact-content-inner').fadeIn();
+            $('.right-section').addClass('open');
+            $('.collapsible-menu').fadeOut().removeClass('appear');
+            collapsible_menu = 0;
 
+
+        });
+        $('.close-about-mobile').click(function () {
+
+            $('.right-section').removeClass('open');
+            $('.collapsible-menu').fadeOut().removeClass('appear');
+            collapsible_menu = 0;
+            $('.about-content-inner , .contact-content-inner').fadeOut();
+
+        });
     })(jQuery);
 
 
@@ -236,4 +263,4 @@
 </script>
 </body>
 </html>
-<?php require_once 'bottom-cache.php'; ?>
+<?php //require_once 'bottom-cache.php';?>

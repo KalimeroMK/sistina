@@ -23,10 +23,27 @@ anime.timeline({loop: false})
 
 */
 
+$(document).ready(function() {
+  $(document).ready(function(){
+    $("#select-city").change(function(){
+        x=$("#select-city option:selected").index();
+       
+        $('#city-'+(x+1)).toggleClass('active').siblings().removeClass('active');
+ 
+    });
+});
 
+});
+    
 $(document).ready(function(){
-    $(".toggle-btn").click(function(){
+    $('.about-content-inner , .contact-content-inner').fadeOut();
+    $(".toggle-btn.contact-btn").click(function(){
         $(".right-section").toggleClass("open");
+        $('.contact-content-inner').fadeIn("slow");
+    });
+     $(".toggle-btn.about-btn").click(function(){
+        $(".right-section").toggleClass("open");
+        $('.about-content-inner').fadeIn("slow");
     });
     
     window.onbeforeunload = $(window).one("load", function(){location.hash=''});
@@ -40,6 +57,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".close-btn").click(function(){
         $(".right-section").toggleClass( "open");
+         $('.about-content-inner , .contact-content-inner').fadeOut();
     });
 });
 
@@ -56,7 +74,7 @@ vid.onended = function() {
 
 
 
-    $(".toggle-btn").click(function(){
+    $(".toggle-btn.about-btn").click(function(){
         $(".about-video").toggleClass("active");
 vid.autoplay = true;
 vid.load();
